@@ -1,0 +1,19 @@
+# The number 1 represents a present object and the number 0 represents emptiness, no object
+# Numbers between [] represent a literal list
+# Hashtags represent comments
+
+# Test plan for the size() method of the Stock class
+
+Test #				Content of Stock list					    Result			  Testing
+===================================================================================================
+Test 1: [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]		  03			General case
+Test 2: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]		  16				Full
+Test 3: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]		  00			   	Empty
+
+# Test plan for the isEmpty() method of the Stock class
+
+Test #				Content of Stock list					    Result			  Testing
+===================================================================================================
+Test 1: [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]		 False			General case
+Test 2: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]		 False				Full
+Test 3: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]		 True			   	Empty
