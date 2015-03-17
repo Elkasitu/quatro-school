@@ -18,9 +18,12 @@ public class Piece
 	 * @param filling enum of type Filling representing the piece's filling
 	 * @param shape enum of type Shape representing the piece's shape
 	 * @param size enum of type Size representing the piece's size
+	 * @throws IllegalArgumentException if any of the arguments is null
 	 */
 	public Piece(Color color, Filling filling, Shape shape, Size size)
 	{
+		if (color == null || filling == null || shape == null || size == null)
+			throw new IllegalArgumentException("One or more arguments are null");
 		this.color = color;
 		this.filling = filling;
 		this.shape = shape;

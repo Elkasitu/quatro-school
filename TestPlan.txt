@@ -1,6 +1,6 @@
 # The number 1 represents a present object and the number 0 represents emptiness, no object
-# Numbers between [] represent a literal list
-# Hashtags represent comments
+# Numbers between [] represent a literal list/array
+# Hash tags represent comments
 
 # Test plan for the size() method of the Stock class
 
@@ -17,3 +17,32 @@ Test #				Content of Stock list					    Result			  Testing
 Test 1: [1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]		 False			General case
 Test 2: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]		 False				Full
 Test 3: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]		 True			   	Empty
+
+# Test plan for the hasAlignment() method of the Board class
+
+Test #				Content of Game Board					    Result			  Testing
+===================================================================================================
+Test 1: [[0, 0, 1, 0],											 False			No alignment
+		 [0, 0, 1, 0],
+		 [0, 1, 0, 0],
+		 [0, 1, 0, 0]]
+
+Test 2: [[0, 0, 0, 0],											 False				Empty
+		 [0, 0, 0, 0],
+		 [0, 0, 0, 0],
+		 [0, 0, 0, 0]]
+		 
+Test 3: [[0, 0, 1, 0],											 True		  Vertical alignment
+		 [0, 0, 1, 0],
+		 [0, 1, 1, 0],
+		 [0, 1, 1, 0]]
+		 
+Test 4: [[0, 0, 1, 0],											 True		  Horizontal alignment
+		 [0, 0, 1, 0],
+		 [1, 1, 1, 1],
+		 [0, 1, 0, 0]]
+		 
+Test 5: [[0, 0, 1, 1],											 True		  Diagonal alignment
+		 [0, 0, 1, 0],
+		 [0, 1, 0, 0],
+		 [1, 1, 0, 0]]
